@@ -51,6 +51,7 @@ const fadeIn = (index) => ({
 const Stats = () => {
   return (
     <section className="bg-gradient-to-br from-[#3B0073] to-[#5E00A8] text-white py-20 px-6">
+        <h2 className="text-xl font-bold mb-4">Insight-Led. Strategy-Focused. Impact-Driven.</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {stats.map((stat, index) => (
           <motion.div
