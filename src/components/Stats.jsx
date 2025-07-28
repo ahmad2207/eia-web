@@ -50,8 +50,8 @@ const fadeIn = (index) => ({
 
 const Stats = () => {
   return (
-    <section className="bg-gradient-to-br from-[#3B0073] to-[#5E00A8] text-white py-20 px-6">
-        <h2 className="text-xl font-bold mb-4">Insight-Led. Strategy-Focused. Impact-Driven.</h2>
+    <section className="bg-gradient-to-br from-[#3B0073] to-[#5E00A8] text-white py-14 px-6">
+        <h2 className="text-2xl font-bold mb-6 text-center">Insight-Led. Strategy-Focused. Impact-Driven.</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {stats.map((stat, index) => (
           <motion.div
@@ -61,7 +61,7 @@ const Stats = () => {
             viewport={{ once: true }}
             variants={fadeIn(index)}
           >
-            <h3 className="text-4xl font-extrabold tracking-tight">
+            <h3 className="text-2xl font-extrabold tracking-tight">
               <CountUp end={stat.number} duration={2} suffix={stat.suffix || ""} />
             </h3>
             <p className="mt-3 text-base font-medium opacity-90">{stat.label}</p>
