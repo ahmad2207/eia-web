@@ -30,7 +30,7 @@ import CountUp from "react-countup";
 
 const stats = [
   { number: 10000, suffix: "+", label: "Individuals to be empowered by 2035" },
-  { number: 10000, suffix: "+", label: "SMEs & nonprofits supported" },
+  { number: 1000, suffix: "+", label: "SMEs & nonprofits supported" },
   { number: 500, suffix: "+", label: "Sponsored programs" },
   { number: 9, label: "Strategic focus areas" },
 ];
