@@ -8,9 +8,9 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const testimonials = [
   {
-    quote: "Working with this team has been a transformational experience. Their commitment to community engagement is unmatched.",
-    name: "Amaka Obi",
-    title: "Program Director, Women for Equity",
+    quote: "The IFYM program was well organized, and and session was very informative. And as parents being part of the program, I gained a lot from it.",
+    name: "Mrs. Olowoniyi",
+    title: "A parent,  Islamic finance for young minds (IFYM) program",
     image: testimonial1
   },
   {

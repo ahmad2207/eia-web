@@ -157,6 +157,18 @@ const Navbar = () => {
               Contact
             </button>
           </li>
+          <li>
+            <Link
+              to="/faq"
+              className={`${navLinkClass} ${
+                location.pathname === "/faq"
+                  ? "border-b-2 border-brandGreen pb-1"
+                  : ""
+              }`}
+            >
+              FAQ
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Hamburger */}
@@ -185,6 +197,9 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
             Contact
           </button>
+          <Link to="/faq" onClick={() => setMenuOpen(false)} className={navLinkClass}>
+            FAQ
+          </Link>
         </div>
       )}
     </nav>

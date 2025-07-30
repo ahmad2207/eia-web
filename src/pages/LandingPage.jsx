@@ -6,7 +6,7 @@ import Services from "../components/Services";
 import ImpactPath from "../components/ImpactPath";
 import Partners from "../components/Partners";
 import Testimonials from "../components/Testimonials";
-import FAQ from "../components/FAQ";
+// import FAQ from "./FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -20,7 +20,7 @@ const LandingPage = () => {
       <ImpactPath />
       <Partners />
       <Testimonials />
-      <FAQ />
+      {/* <FAQ /> */}
       <Contact />
       <Footer />
     </div>

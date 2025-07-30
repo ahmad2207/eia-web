@@ -78,7 +78,7 @@ const Services = () => {
       <div className="max-w-4xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold text-center mb-4">What We Do</h2>
       <p className="text-[#000000]/90  ">
-          We work across eight interconnected service tracks that fuel innovation, inclusion, and development.
+          We work across nine interconnected service tracks that fuel innovation, inclusion, and development.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
