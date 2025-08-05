@@ -16,9 +16,14 @@ const Hero = () => {
           Empowering communities and institutions through strategic insight, policy innovation, and accessible education.
         </p>
         <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
-          <button className="bg-[#FFC843] text-[#3B0073] px-8 py-3 rounded-md font-semibold text-sm uppercase">
+          <a
+            href="https://www.instagram.com/elevate_insight_partners"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FFC843] text-[#3B0073] px-8 py-3 rounded-md font-semibold text-sm uppercase hover:bg-[#e6b938] transition duration-300"
+          >
             Explore Our Work
-          </button>
+          </a>
           <button className="border border-white px-8 py-3 rounded-md font-semibold text-sm uppercase">
             Partner With Us
           </button>
