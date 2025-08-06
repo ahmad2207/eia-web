@@ -1,6 +1,6 @@
 // src/components/Hero.js
 import React from "react";
-import background1 from "../assets/images/background1.png";
+import background1 from "../assets/images/banner.png";
 
 const Hero = () => {
   return (

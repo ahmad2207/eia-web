@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scrollLogos {
+  animation: scrollLogos 30s linear infinite;
+}
