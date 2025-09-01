@@ -144,7 +144,7 @@ const Navbar = () => {
                   : ""
               }`}
             >
-              Stem
+              stem
             </Link>
           </li>
           <li>
@@ -196,7 +196,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to="/stem" onClick={() => setMenuOpen(false)} className={navLinkClass}>
-            Stem
+            stem
           </Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             About Us

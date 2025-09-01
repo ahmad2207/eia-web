@@ -1,15 +1,15 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import StemHero from "../components/Stem/StemHero";
-import StemInAction from "../components/Stem/StemInAction";
-import StemPrograms from "../components/Stem/StemPrograms";
-import StemSDGs from "../components/Stem/StemSDGs";
-import StemPartnerCategories from "../components/Stem/StemPartnerCategories";
+import StemHero from "../components/stem/StemHero";
+import StemInAction from "../components/stem/StemInAction";
+import StemPrograms from "../components/stem/StemPrograms";
+import StemSDGs from "../components/stem/StemSDGs";
+import StemPartnerCategories from "../components/stem/StemPartnerCategories";
 import StemPartnerCategoriesCTA from "../components/stem/StemPartnerCategoriesCTA";
 
 
-const Stem = () => {
+const stem = () => {
   return (
     <main className="w-full">
       <Navbar />
@@ -24,4 +24,4 @@ const Stem = () => {
   );
 };
 
-export default Stem;
+export default stem;

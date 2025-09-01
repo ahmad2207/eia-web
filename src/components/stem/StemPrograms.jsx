@@ -37,7 +37,7 @@
 //   return (
 //     <section id="stem-programs" className="bg-white py-16 px-6">
 //       <div className="max-w-6xl mx-auto text-center">
-//         <h2 className="text-3xl font-bold text-[#3B0073]">Stem in Action</h2>
+//         <h2 className="text-3xl font-bold text-[#3B0073]">stem in Action</h2>
 //         <p className="text-[#3B0073]/80 max-w-3xl mx-auto text-center mt-4">
 //           Elevate Insight Partners aligns global STEM priorities with Africa's
 //           most pressing needs — financial literacy, inclusive insurance, data
