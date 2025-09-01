@@ -98,13 +98,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false);
-    }
-  };
+  // const scrollToSection = (id) => {
+  //   const el = document.getElementById(id);
+  //   if (el) {
+  //     el.scrollIntoView({ behavior: "smooth" });
+  //     setMenuOpen(false);
+  //   }
+  // };
 
   const isHome = location.pathname === "/";
   const navTextColor = scrolled || !isHome ? "text-brandBlue" : "text-white";
@@ -136,9 +136,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button onClick={() => scrollToSection("services")} className={navLinkClass}>
-              Our Services
-            </button>
+            <Link
+              to="/stem"
+              className={`${navLinkClass} ${
+                location.pathname === "/stem"
+                  ? "border-b-2 border-brandGreen pb-1"
+                  : ""
+              }`}
+            >
+              Stem
+            </Link>
           </li>
           <li>
             <Link
@@ -152,11 +159,11 @@ const Navbar = () => {
               About Us
             </Link>
           </li>
-          <li>
+          {/* <li>
             <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
               Contact
             </button>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/faq"
@@ -188,15 +195,15 @@ const Navbar = () => {
           <Link to="/" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             Home
           </Link>
-          <button onClick={() => scrollToSection("services")} className={navLinkClass}>
-            Our Services
-          </button>
+          <Link to="/stem" onClick={() => setMenuOpen(false)} className={navLinkClass}>
+            Stem
+          </Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             About Us
           </Link>
-          <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
+          {/* <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
             Contact
-          </button>
+          </button> */}
           <Link to="/faq" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             FAQ
           </Link>
