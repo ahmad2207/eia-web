@@ -90,8 +90,8 @@ import {
 
 // Import partner logos
 import partner1 from "../assets/images/foliage.png";
-import partner2 from "../assets/images/Teela.png";
-import partner3 from "../assets/images/riders.png";
+import partner2 from "../assets/images/sbe.png";
+import partner3 from "../assets/images/9qc.png";
 import partner4 from "../assets/images/ete.png";
 import partner5 from "../assets/images/aaa.png";
 import partner6 from "../assets/images/proppie.png";
