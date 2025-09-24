@@ -94,7 +94,7 @@ import partner2 from "../assets/images/sbe.png";
 import partner3 from "../assets/images/9qc.png";
 import partner4 from "../assets/images/ete.png";
 import partner5 from "../assets/images/aaa.png";
-import partner6 from "../assets/images/proppie.png";
+import partner6 from "../assets/images/partner.png";
 
 const partnerTypes = [
   {

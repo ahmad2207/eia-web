@@ -65,6 +65,7 @@ const Stats = () => {
               <CountUp end={stat.number} duration={2} suffix={stat.suffix || ""} />
             </h3>
             <p className="mt-3 text-base font-medium opacity-90">{stat.label}</p>
+            
           </motion.div>
         ))}
       </div>
