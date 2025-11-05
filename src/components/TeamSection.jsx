@@ -1,29 +1,29 @@
 import React from "react";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import testimonial1 from "../assets/images/team-m.jpg";
+import testimonial2 from "../assets/images/team-5.jpg";
+import testimonial3 from "../assets/images/team-4.jpg";
 
 const teamMembers = [
   {
-    name: "Erica Osawaru",
-    title: "Policy Lead",
+    name: "Mutiat Abiola Yusuff-Akinlabi",
+    title: "Founder/ Principal Consultant",
     image: testimonial1,
     description:
-      "Erica leads policy strategy and stakeholder engagement, bringing deep expertise in development systems.",
+      "Mrs Mutiait Leads the firm’s strategy and operations while providing expert advice and solutions to clients.",
   },
   {
-    name: "David Sheun",
-    title: "Research & Strategy",
+    name: "Khalid Disu",
+    title: "Digital Service Associate",
     image: testimonial2,
     description:
-      "David spearheads research, monitoring trends and providing insights for inclusive systems innovation.",
+      "Khalid supports digital operations by managing online platforms, assisting clients, and ensuring smooth digital service delivery.",
   },
   {
-    name: "Tolu Adeyemi",
+    name: "Nana Firdaus Idris",
     title: "Community Engagement",
     image: testimonial3,
     description:
-      "Tolu connects with communities, facilitating grassroots collaboration and participatory approaches.",
+      "Nana connects with communities, facilitating grassroots collaboration and participatory approaches.",
   },
 ];
 

@@ -133,8 +133,8 @@ const partnerLogos = [
   partner1,
   partner2,
   partner3,
-  partner4,
-  partner5,
+  // partner4,
+  // partner5,
   partner6,
   
 ];
@@ -184,7 +184,7 @@ const Partners = () => {
             {scrollingLogos.map((logo, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 flex items-center justify-center w-[150px] h-[80px]"
+                className="flex-shrink-0 flex items-center justify-center w-[150px] h-[100px]"
               >
                 <img
                   src={logo}
