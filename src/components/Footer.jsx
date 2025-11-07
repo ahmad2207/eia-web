@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <img src={eialogo} alt="Elevate Insight Partners Logo" className="h-24 w-auto" />
         <p className="text-white text-sm md:text-base text-center md:text-right">
-          © 2024 Elevate Insight Partners Ltd. All rights reserved.
+          © 2025 Elevate Insight Partners Ltd. All rights reserved.
         </p>
       </div>
     </footer>

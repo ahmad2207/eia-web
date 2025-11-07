@@ -188,7 +188,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-[#F8F5FB] py-30 px-6">
+    <section className="bg-[#Ffffff] py-8 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-[#000000] text-center mb-6">
           Frequently Asked Questions

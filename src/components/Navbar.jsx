@@ -98,17 +98,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const scrollToSection = (id) => {
-  //   const el = document.getElementById(id);
-  //   if (el) {
-  //     el.scrollIntoView({ behavior: "smooth" });
-  //     setMenuOpen(false);
-  //   }
-  // };
-
   const isHome = location.pathname === "/";
-  const navTextColor = scrolled || !isHome ? "text-brandBlue" : "text-white";
-  const navLinkClass = "hover:text-brandGreen transition-colors duration-200";
+  const navTextColor = scrolled || !isHome ? "text-[#3B0073]" : "text-white";
+  const navLinkClass = "hover:text-[#00B9C7] transition-colors duration-200";
 
   return (
     <nav
@@ -117,19 +109,20 @@ const Navbar = () => {
       } py-4 px-6 md:px-[80px]`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
+        {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src={eialogo} alt="EIA Logo" className="h-[60px]" />
+          <img src={eialogo} alt="EIA Logo" className="h-[55px]" />
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Center Nav Items */}
         <ul
-          className={`hidden md:flex space-x-8 text-sm font-semibold ${navTextColor}`}
+          className={`hidden md:flex space-x-8 text-sm font-semibold ${navTextColor} mx-auto`}
         >
           <li>
             <Link
               to="/"
               className={`${navLinkClass} ${
-                location.pathname === "/" ? "border-b-2 border-brandGreen pb-1" : ""
+                location.pathname === "/" ? "border-b-2 border-[#FFC843] pb-1" : ""
               }`}
             >
               Home
@@ -140,7 +133,7 @@ const Navbar = () => {
               to="/stem"
               className={`${navLinkClass} ${
                 location.pathname === "/stem"
-                  ? "border-b-2 border-brandGreen pb-1"
+                  ? "border-b-2 border-[#FFC843] pb-1"
                   : ""
               }`}
             >
@@ -152,42 +145,49 @@ const Navbar = () => {
               to="/about"
               className={`${navLinkClass} ${
                 location.pathname === "/about"
-                  ? "border-b-2 border-brandGreen pb-1"
+                  ? "border-b-2 border-[#FFC843] pb-1"
                   : ""
               }`}
             >
               About Us
             </Link>
           </li>
-          {/* <li>
-            <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
-              Contact
-            </button>
-          </li> */}
           <li>
             <Link
-              to="/faq"
+              to="/contact"
               className={`${navLinkClass} ${
-                location.pathname === "/faq"
-                  ? "border-b-2 border-brandGreen pb-1"
+                location.pathname === "/contact"
+                  ? "border-b-2 border-[#FFC843] pb-1"
                   : ""
               }`}
             >
-              FAQ
+              Contact Us
             </Link>
           </li>
         </ul>
 
-        {/* Mobile Hamburger */}
+        {/* Right - Visit Our Hub Button */}
+        <div className="hidden md:block">
+          <a
+            href="https://www.elevateinsighthub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FFC843] text-[#3B0073] text-md px-5 py-2 rounded-md font-semibold hover:brightness-95 transition"
+          >
+            Visit Our Hub
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-brandBlue"
+          className="md:hidden text-[#3B0073]"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu Items - stacked vertically */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div
           className={`md:hidden flex flex-col items-start gap-4 mt-4 px-6 text-sm font-semibold ${navTextColor}`}
@@ -201,12 +201,17 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             About Us
           </Link>
-          {/* <button onClick={() => scrollToSection("contact")} className={navLinkClass}>
-            Contact
-          </button> */}
-          <Link to="/faq" onClick={() => setMenuOpen(false)} className={navLinkClass}>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} className={navLinkClass}>
             FAQ
           </Link>
+          <a
+            href="https://www.elevateinsighthub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block bg-[#FFC843] text-[#3B0073] px-4 py-2 rounded-md font-semibold hover:brightness-95 transition"
+          >
+            Visit Our Hub
+          </a>
         </div>
       )}
     </nav>
@@ -214,6 +219,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
