@@ -76,14 +76,14 @@ const Contact = () => {
                     <div className="grid sm:grid-cols-2 gap-5">
                         <input
                             type="text"
-                            name="user_name"
+                            name="name"
                             placeholder="Your Name"
                             required
                             className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00B9C7]"
                         />
                         <input
                             type="email"
-                            name="user_email"
+                            name="email"
                             placeholder="Your Email"
                             required
                             className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00B9C7]"
@@ -92,7 +92,7 @@ const Contact = () => {
 
                     <input
                         type="text"
-                        name="subject"
+                        name="title"
                         placeholder="Subject"
                         required
                         className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00B9C7]"

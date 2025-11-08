@@ -167,10 +167,14 @@ const Contact = () => {
         {/* Newsletter Form */}
         <div className="flex flex-col justify-center">
           <h3 className="text-xl font-semibold mb-4">Newsletter Signup</h3>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col sm:flex-row gap-4">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col sm:flex-row gap-4"
+          >
             <input
               type="email"
-              name="user_email"
+              name="email"
               placeholder="Enter your email address"
               required
               className="w-full p-4 rounded-md bg-white text-[#3B0073] placeholder:text-[#3B0073]/70 focus:outline-none"
@@ -195,3 +199,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
